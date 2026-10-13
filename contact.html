@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>Contact North Star Bakery</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <p>If you have any questions or inquiries, please feel free to reach out to us using the contact form below.</p>
+    <form action="/submit-contact-form" method="post">
+        <fieldset>
+            <legend>Contact and order details</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="2" maxlength="100" pattern="[A-Za-zÀ-ÖØ-öø-ÿ' -]+" title="Please enter a valid name using letters, spaces, apostrophes, or hyphens."><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required maxlength="254"><br><br>
+        <label for="pickup-date">Pickup date:</label>
+        <input type="date" id="pickup-date" name="pickup-date" min="2024-01-01"><br><br>
+        <label for="request-type">Request type:</label>
+        <select id="request-type" name="request-type" required>
+            <option value="">Please select</option>
+            <option value="pre-order">Pre-order</option>
+            <option value="general-question">General question</option>
+        </select><br><br>
+        <label for="item-details">Item details:</label><br>
+        <textarea id="item-details" name="item-details" rows="5" cols="30" required minlength="5" maxlength="1000"></textarea><br><br>
+        <label for="allergy-notes">Allergy notes, if applicable:</label><br>
+        <textarea id="allergy-notes" name="allergy-notes" rows="5" cols="30" maxlength="500"></textarea><br><br>
+        <input type="submit" value="Send Message">
+        </fieldset>
+    </form>
+</body>
+</html>

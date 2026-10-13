@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Libre+Caslon+Text&display=swap");
+
+body {
+  font-family: "Libre Caslon Text", serif;
+  text-align: center;
+  color: #b8947a;
+  background-color: #fff8ed;
+}
+
+header,
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  color: #684637;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background-color: #684637;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+nav a {
+  color: #fff8ed;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #684637;
+  color: #fff8ed;
+}
